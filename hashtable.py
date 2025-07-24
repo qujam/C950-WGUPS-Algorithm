@@ -28,4 +28,13 @@ class HashTable:
                 return pair[1]
         return None
 
-
+    def __str__(self):
+        output = "Hash Table Contents:\n"
+        for i, bucket in enumerate(self.table):
+            output += f"Bucket {i}: {bucket}\n"
+        return output
+    def __repr__(self):
+        output = "Hash Table Contents:\n"
+        for i, bucket in enumerate(self.table):
+            output += f"Bucket {i}: {bucket}\n"
+        return output
